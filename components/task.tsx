@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Text, StyleSheet, Touchable, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-const Task = (props) => {
+const Task = (props: { text: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => {
 
     return (
       <View style={styles.item}>
